@@ -1,0 +1,81 @@
+* {
+    background-color: #0077B6;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --container_width: 15.625rem;
+    --row_increment: 0.625rem;
+    --card_border_radius: 1rem;
+    --container: 26;
+}
+
+h1 {
+    background-color: #CFF1F9;
+    width: 100%;
+    height: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #0077B6;
+}
+
+.photo_container {
+    position: relative;
+    margin: 10px 10px;
+    grid-row-end: span var(--container);
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: brown;
+}
+
+.image-profile {
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5rem;
+    position: absolute;
+    text-align: center;
+    border-radius: var(--card_border_radius);
+}
+
+.info_container {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    position: relative;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    grid-template-columns: repeat(auto-fill, var(--container));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #CFF1F9;
+}
+
+.name{
+    position: fixed;
+    top: 6rem;
+    left: 0rem;
+}
+
+h2{
+    color: #CFF1F9;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.skills{
+    font-style: italic;
+}
